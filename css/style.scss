@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+body {
+  overflow: hidden;
+  font-family: "Poppins";
+}
+body a {
+  text-decoration: none;
+}
+body ul li {
+  list-style: none;
+}
+.swiper-container {
+  width: 100%;
+  height: 100vh;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9;
+}
+header .menu {
+  padding: 12px 25px;
+}
+header ul {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 15px;
+}
+header ul li a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+header ul li:first-child a {
+  color: white;
+  font-size: 20px;
+}
+.swiper-slide {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.slide-left {
+  margin-left: -140px;
+}
+.slide-left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(50%);
+}
+.slide-right {
+  background: #f7f7f7;
+  position: relative;
+  padding: 110px;
+}
+.slide-right .numbr {
+  font-size: 19em;
+  font-weight: 600;
+  position: absolute;
+  bottom: -150px;
+  right: 0px;
+  z-index: 1;
+  color: transparent;
+  -webkit-text-stroke: 4px #000;
+}
+.slide-right .wrap_word {
+  overflow-wrap: break-word;
+  width: 370px;
+  position: relative;
+  z-index: 2;
+}
+.slide-right h1 {
+  font-size: 4rem;
+  font-weight: bolder;
+  color: #222121;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+.slide-right p {
+  font-size: 0.8em;
+  line-height: 110%;
+  font-weight: 400;
+  margin-top: 25px;
+}
+.slide-right a {
+  position: relative;
+  display: grid;
+  place-items: center;
+  margin-top: 40px;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 15px 24px;
+  color: #000;
+  text-decoration: none;
+  background: #f7f7f7;
+  width: 100%;
+  border: 2px solid #242323;
+}
+.slide-right a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background: #272643;
+  left: 0;
+  bottom: 0;
+  text-decoration: none;
+}
+.slide-right a:hover {
+  background-color: #242323;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  display: none;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  top: inherit;
+  bottom: 15px;
+  width: 100%;
+}
+.swiper-button-prev img,
+.swiper-button-next img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+.swiper-button-prev {
+  bottom: 83%;
+  left: -2.5%;
+}
+.swiper-button-next {
+  left: 2.8%;
+  z-index: 999;
+}
